@@ -1,45 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
 
-    <!-- Required meta tags (kept as requested) -->
+    <!-- Required meta tags (kept exactly) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="facebook-domain-verification" content="mapye10cdu4h5g60fjlz1o7x3et2qf" />
 
-    <title>Welcome</title>
+    <title>Welcome | Jay Prasad Majhi</title>
 
-    <!-- Redirect after 3 seconds -->
-    <meta http-equiv="refresh" content="3;url=https://ai.jayprasad.com.np">
+    <!-- Redirect after 45 seconds -->
+    <meta http-equiv="refresh" content="4;url=https://ai.jayprasad.com.np" />
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 20%;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            height: 100vh;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #000814 100%);
+        }
+
+        /* Star background */
+        .stars, .stars2, .stars3 {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            background: transparent;
+            box-shadow: 
+                1000px 200px #fff, 300px 800px #fff, 700px 500px #fff,
+                1200px 900px #fff, 400px 300px #fff, 900px 700px #fff,
+                200px 1000px #fff, 1500px 400px #fff;
+            animation: animStar 50s linear infinite;
+        }
+
+        .stars2 {
+            box-shadow:
+                200px 600px #fff, 600px 100px #fff, 1100px 500px #fff,
+                1400px 800px #fff, 800px 900px #fff;
+            animation-duration: 100s;
+        }
+
+        .stars3 {
+            box-shadow:
+                300px 200px #fff, 900px 100px #fff, 1300px 700px #fff;
+            animation-duration: 150s;
+        }
+
+        @keyframes animStar {
+            from { transform: translateY(0px); }
+            to { transform: translateY(-2000px); }
+        }
+
+        /* Center content */
+        .content {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            backdrop-filter: blur(2px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .note {
+            margin-top: 15px;
+            font-size: 0.95rem;
+            opacity: 0.8;
+        }
+
         footer {
-            margin-top: 40px;
-            font-size: 14px;
-            color: #555;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+
+        footer a {
+            color: #4da3ff;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>You are being redirected to our AI platform.</p>
-    <p>
-        If the redirection does not happen automatically,
-        <a href="https://ai.jayprasad.com.np">click here</a>.
-    </p>
 
-    <footer>
-        <p>© <span id="year"></span> Jay Prasad Majhi</p>
-        <p>Email: <a href="mailto:info@jayprasad.com.np">info@jayprasad.com.np</a></p>
-    </footer>
+    <!-- Animated stars -->
+    <div class="stars"></div>
+    <div class="stars stars2"></div>
+    <div class="stars stars3"></div>
+
+    <!-- Content -->
+    <div class="content">
+        <h1>Welcome to My Website</h1>
+        <p>You are being redirected to our AI platform.</p>
+        <p class="note">
+            If redirection does not start automatically,
+            <a href="https://ai.jayprasad.com.np">click here</a>.
+        </p>
+
+        <footer>
+            <p>© <span id="year"></span> Jay Prasad Majhi</p>
+            <p>Email: <a href="mailto:info@jayprasad.com.np">info@jayprasad.com.np</a></p>
+        </footer>
+    </div>
 
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+
 </body>
 </html>
