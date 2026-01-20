@@ -2,12 +2,12 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Jay prasad",
+  firstName: "Jay Prasad",
   lastName: "Majhi",
   name: `Jay prasad Majhi`,
   role: "Cyber security Analyst",
   avatar: "/images/avatar.jpeg",
-  email: "example@gmail.com",
+  email: "admin@jayprasad.com.np",
   location: "Asia/Kathmandu", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English"], // optional: Leave the array empty if you don't want to display languages
 };
