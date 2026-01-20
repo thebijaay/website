@@ -5,7 +5,13 @@ const person: Person = {
   firstName: "Jay Prasad",
   lastName: "Majhi",
   name: `Jay Prasad Majhi`,
-  role: "Front-End Developer and Cybersecurity & IT Professional",
+  role: "Front-End Developer, Cybersecurity & IT Professional",
+  avatar: "/images/avatar.jpeg",
+  email: "admin@jayprasad.com.np",
+  firstName: "Jay Prasad",
+  lastName: "Majhi",
+  name: `Jay Prasad Majhi`,
+  role: "Front-End Developer, Cybersecurity & IT Professional",
   avatar: "/images/avatar.jpeg",
   email: "admin@jayprasad.com.np",
   location: "Asia/Kathmandu", // IANA time zone for Nepal
@@ -22,12 +28,14 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
+    link: "https://github.com/Jaymaji",
     link: "https://github.com/thebijaay",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
+    link: "https://www.linkedin.com/in/jay-prasad-majhi-277662237/",
     link: "https://www.linkedin.com/in/thebijay/",
     essential: true,
   },
@@ -35,12 +43,13 @@ const social: Social = [
     name: "Website",
     icon: "link",
     link: "https://www.jayprasad.com.np",
+    link: "https://www.jayprasad.com.np",
     essential: true,
   },
   {
     name: "Email",
     icon: "email",
-    link: `mailto:${person.email}`,
+    link: `mailto:admin@jayprasad.com.np`,
     essential: true,
   },
 ];
@@ -50,8 +59,9 @@ const home: Home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Front-End Developer and Cybersecurity & IT Professional</>,
+  description: `Front-End Developer${person.role}`,
+  headline: <>Front-End Developer, Cybersecurity & IT Professional</>,
+  headline: <>Front-End Developer, Cybersecurity & IT Professional</>,
   featured: {
     display: false,
     title: <></>,
@@ -115,6 +125,14 @@ const about: About = {
           <>Guided students through the application and admission process.</>,
           <>Provided comprehensive support to ensure a smooth transition to their chosen university.</>,
         ],
+        images: [
+          {
+            src: "/images/work/work-1.jpg",
+            alt: "Work 1",
+            width: 16,
+            height: 9,
+          }
+        ],
       },
       {
         company: "Sagarmatha Teens Club",
@@ -124,6 +142,14 @@ const about: About = {
           <>Led various social initiatives and community service projects.</>,
           <>Organized educational workshops and events for youth empowerment.</>,
           <>Managed club activities and fostered a collaborative environment.</>,
+        ],
+        images: [
+           {
+            src: "/images/work/work-2.jpg",
+            alt: "Work 2",
+            width: 16,
+            height: 9,
+          }
         ],
       },
     ],
@@ -143,6 +169,16 @@ const about: About = {
       {
         name: "Sagarmatha Secondary School",
         description: <>School Leaving Certificate</>,
+      },
+      {
+        name: "EC-Council",
+        description: <>Certified Ethical Hacker (CEH) - In Progress</>,
+      },
+      {
+        name: "Cisco Networking Academy",
+        description: <>Cybersecurity Essentials</>,
+      },
+      {
       },
       {
         name: "EC-Council",
@@ -206,6 +242,48 @@ const gallery: Gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
+  images: [
+    {
+      src: "/images/gallery/gallery-1.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/gallery-2.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/gallery-3.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/gallery-4.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+     {
+      src: "/images/gallery/horizontal-1.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/vertical-4.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/horizontal-3.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/vertical-1.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+  ],
   images: [],
 };
 
