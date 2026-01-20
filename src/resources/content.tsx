@@ -5,51 +5,42 @@ const person: Person = {
   firstName: "Jay prasad",
   lastName: "Majhi",
   name: `Jay prasad Majhi`,
-  role: "Cyber security Analyst",
+  role: "Admission Officer and Cybersecurity & IT Professional",
   avatar: "/images/avatar.jpeg",
-  email: "example@gmail.com",
-  location: "Asia/Kathmandu", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English"], // optional: Leave the array empty if you don't want to display languages
+  email: "jaymaji@gmail.com",
+  location: "Asia/Kathmandu", // IANA time zone for Nepal
+  languages: ["English", "Nepali", "Hindi"],
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: <>My weekly newsletter about creativity and engineering</>,
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  // Set essentials: true for links you want to show on the about page
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/Jaymaji",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/jay-prasad-majhi-277662237/",
     essential: true,
   },
   {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    name: "Website",
+    icon: "link",
+    link: "https://www.jaymajhi.com.np",
     essential: true,
   },
   {
     name: "Email",
     icon: "email",
-    link: `mailto:${person.email}`,
+    link: `mailto:jaymaji@gmail.com`,
     essential: true,
   },
 ];
@@ -60,25 +51,17 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Securing the digital frontier, one line of code at a time</>,
+  headline: <>Admission Officer and Cybersecurity & IT Professional</>,
   featured: {
-    display: true,
-    title: (
-      <Row gap="12" vertical="center">
-        <strong className="ml-4">SecureDev</strong>{" "}
-        <Line background="brand-alpha-strong" vert height="20" />
-        <Text marginRight="4" onBackground="brand-medium">
-          Featured work
-        </Text>
-      </Row>
-    ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    display: false,
+    title: <></>,
+    href: "",
   },
   subline: (
     <>
-      I'm Jay, a Cyber Security Analyst and Full Stack Developer, passionate about building secure
-      and resilient applications. I thrive on solving complex problems and protecting digital
-      assets.
+      A dedicated and results-oriented professional with a unique blend of experience in both the
+      education and technology sectors. I bridge the gap between student aspirations and academic
+      opportunities while ensuring the security and integrity of digital infrastructures.
     </>
   ),
 };
@@ -97,164 +80,108 @@ const about: About = {
   },
   calendar: {
     display: false,
-    link: "https://cal.com",
+    link: "",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Jay Prasad Majhi is a dedicated Cyber Security Analyst and expert Full Stack Developer with
-        a passion for building secure and scalable applications. With a strong foundation in both
-        offensive and defensive security measures, he excels at identifying vulnerabilities and
-        implementing robust solutions. His expertise spans the entire development lifecycle, from
-        secure coding practices to deploying resilient infrastructure.
+        I am a dedicated and results-oriented professional with a unique blend of experience in
+        both the education and technology sectors. As an Admission Officer, I excel at guiding
+        prospective students through the complexities of the university admission process,
+        providing them with the information and support they need to make informed decisions about
+        their academic future. My background in Cybersecurity and IT allows me to contribute to the
+        security and efficiency of our digital infrastructure, ensuring a safe and seamless
+        experience for both students and staff. I am passionate about leveraging my dual expertise
+        to create a positive and secure environment that fosters educational growth and success.
+        <br />
+        <br />
+        Interests: Traveling, Photography, Public Speaking, and engaging in CTF (Capture The Flag)
+        competitions.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "SecureNet Solutions",
-        timeframe: "2021 - Present",
-        role: "Senior Cyber Security Analyst",
+        company: "Oli & Associates Pvt. Ltd",
+        timeframe: "Feb 2024 - Present",
+        role: "Admission Officer",
         achievements: [
-          <>
-            Led threat intelligence and incident response initiatives, reducing security incidents
-            by 30%.
-          </>,
-          <>
-            Developed and implemented a comprehensive vulnerability management program, resulting
-            in a 40% reduction in critical vulnerabilities.
-          </>,
-          <>
-            Performed penetration testing and security audits for web applications and cloud
-            infrastructure.
-          </>,
-        ],
-        images: [
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Cybersecurity Dashboard",
-            width: 16,
-            height: 9,
-          },
+          <>Assisted students with university and course selection.</>,
+          <>Guided students through the application and admission process.</>,
+          <>Provided comprehensive support to ensure a smooth transition to their chosen university.</>,
         ],
       },
       {
-        company: "Innovatech",
-        timeframe: "2018 - 2021",
-        role: "Full Stack Developer",
+        company: "Sagarmatha Teens Club",
+        timeframe: "Nov 2018 - Jan 2024",
+        role: "Vice President",
         achievements: [
-          <>
-            Engineered and maintained secure, high-performance web applications using the MERN
-            stack.
-          </>,
-          <>
-            Integrated security best practices into the SDLC, including static and dynamic code
-            analysis.
-          </>,
-          <>
-            Contributed to the development of a secure authentication and authorization system.
-          </>,
-        ],
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Code on a screen",
-            width: 16,
-            height: 9,
-          },
+          <>Led various social initiatives and community service projects.</>,
+          <>Organized educational workshops and events for youth empowerment.</>,
+          <>Managed club activities and fostered a collaborative environment.</>,
         ],
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Education & Certifications",
     institutions: [
       {
-        name: "Tribhuvan University",
-        description: <>B.Sc. in Computer Science and Information Technology</>,
+        name: "Sunway International Business School",
+        description: <>Bachelor of Business Studies</>,
       },
       {
-        name: "Certified Ethical Hacker (CEH)",
-        description: <>Advanced training in penetration testing and ethical hacking methodologies.</>,
+        name: "Koshi Saint James Secondary School",
+        description: <>High School</>,
+      },
+      {
+        name: "Sagarmatha Secondary School",
+        description: <>School Leaving Certificate</>,
+      },
+      {
+        name: "EC-Council",
+        description: <>Certified Ethical Hacker (CEH) - In Progress</>,
+      },
+      {
+        name: "Cisco Networking Academy",
+        description: <>Cybersecurity Essentials</>,
+      },
+      {
+        name: "The Digital Investigator",
+        description: <>Certified Digital Forensic Investigator (CDFI)</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical Skills",
     skills: [
       {
         title: "Cybersecurity",
         description: (
           <>
-            Proficient in penetration testing, vulnerability assessment, and incident response.
-            Experienced with tools like Metasploit, Wireshark, and Burp Suite.
+            Digital Forensics, Penetration Testing, Malware Analysis, Network Security, Web
+            Application Security.
           </>
         ),
-        tags: [
-          {
-            name: "Penetration Testing",
-            icon: "shield",
-          },
-          {
-            name: "Incident Response",
-            icon: "alert",
-          },
-        ],
-        images: [
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Network diagram",
-            width: 16,
-            height: 9,
-          },
-        ],
       },
       {
-        title: "Full Stack Development",
-        description: (
-          <>
-            Expertise in building and deploying web applications with JavaScript, React, Node.js,
-            and Python. Experience with both SQL and NoSQL databases, and cloud platforms like
-            AWS.
-          </>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "React",
-            icon: "react",
-          },
-          {
-            name: "Node.js",
-            icon: "nodejs",
-          },
-          {
-            name: "Python",
-            icon: "python",
-          },
-          {
-            name: "AWS",
-            icon: "aws",
-          },
-        ],
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Cloud infrastructure diagram",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Programming",
+        description: <>C, C++, Java, Python, JavaScript, PHP, HTML, CSS</>,
+      },
+      {
+        title: "Database",
+        description: <>MySQL, Oracle</>,
+      },
+      {
+        title: "Networking",
+        description: <>Cisco Packet Tracer, Wireshark, Nmap</>,
       },
     ],
   },
@@ -265,8 +192,6 @@ const blog: Blog = {
   label: "Blog",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work: Work = {
@@ -274,8 +199,6 @@ const work: Work = {
   label: "Work",
   title: `Projects – ${person.name}`,
   description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
 };
 
 const gallery: Gallery = {
@@ -283,50 +206,7 @@ const gallery: Gallery = {
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
-  images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-  ],
+  images: [],
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
