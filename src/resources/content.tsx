@@ -2,12 +2,12 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Jay prasad",
+  firstName: "Jay Prasad",
   lastName: "Majhi",
-  name: `Jay prasad Majhi`,
-  role: "Admission Officer and Cybersecurity & IT Professional",
+  name: `Jay Prasad Majhi`,
+  role: "Front-End Developer and Cybersecurity & IT Professional",
   avatar: "/images/avatar.jpeg",
-  email: "jaymaji@gmail.com",
+  email: "admin@jayprasad.com.np",
   location: "Asia/Kathmandu", // IANA time zone for Nepal
   languages: ["English", "Nepali", "Hindi"],
 };
@@ -22,25 +22,25 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/Jaymaji",
+    link: "https://github.com/thebijaay",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/in/jay-prasad-majhi-277662237/",
+    link: "https://www.linkedin.com/in/thebijay/",
     essential: true,
   },
   {
     name: "Website",
     icon: "link",
-    link: "https://www.jaymajhi.com.np",
+    link: "https://www.jayprasad.com.np",
     essential: true,
   },
   {
     name: "Email",
     icon: "email",
-    link: `mailto:jaymaji@gmail.com`,
+    link: `mailto:${person.email}`,
     essential: true,
   },
 ];
@@ -51,7 +51,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Admission Officer and Cybersecurity & IT Professional</>,
+  headline: <>Front-End Developer and Cybersecurity & IT Professional</>,
   featured: {
     display: false,
     title: <></>,
