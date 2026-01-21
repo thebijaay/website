@@ -27,7 +27,7 @@ export const Footer = () => {
           <Text onBackground="neutral-weak">
             {/* Usage of this template requires attribution. Please don't remove the link to Once UI unless you have a Pro license. */}
             / Build your portfolio with{" "}
-            <SmartLink href="github.com.thebijaay">Jay Prasad majhi</SmartLink>
+            <SmartLink href="https://github.com/thebijaay">Jay Prasad Majhi</SmartLink>
           </Text>
         </Text>
         <Row gap="16">
