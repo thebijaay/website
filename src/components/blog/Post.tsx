@@ -8,9 +8,11 @@ interface PostProps {
   post: any;
   thumbnail: boolean;
   direction?: "row" | "column";
+  showCircularAvatar?: boolean;
+  customImage?: string;
 }
 
-export default function Post({ post, thumbnail, direction }: PostProps) {
+export default function Post({ post, thumbnail, direction, showCircularAvatar, customImage }: PostProps) {
   return (
     <Card
       fillWidth
@@ -25,14 +27,14 @@ export default function Post({ post, thumbnail, direction }: PostProps) {
       gap={direction === "column" ? undefined : "24"}
       s={{ direction: "column" }}
     >
-      {post.metadata.image && thumbnail && (
+      {(post.metadata.image || customImage) && thumbnail && (
         <Media
           priority
           sizes="(max-width: 768px) 100vw, 640px"
           border="neutral-alpha-weak"
           cursor="interactive"
           radius="l"
-          src={post.metadata.image}
+          src={customImage || post.metadata.image}
           alt={"Thumbnail of " + post.metadata.title}
           aspectRatio="16 / 9"
         />
@@ -41,7 +43,13 @@ export default function Post({ post, thumbnail, direction }: PostProps) {
         <Column maxWidth={28} paddingY="24" paddingX="l" gap="20" vertical="center">
           <Row gap="24" vertical="center">
             <Row vertical="center" gap="16">
-              <Avatar src={person.avatar} size="s" />
+              {showCircularAvatar && (
+                <Avatar 
+                  src={person.avatar} 
+                  size="s" 
+                  style={{ borderRadius: '50%' }}
+                />
+              )}
               <Text variant="label-default-s">{person.name}</Text>
             </Row>
             <Text variant="body-default-xs" onBackground="neutral-weak">

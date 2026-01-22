@@ -119,6 +119,7 @@ export default async function RootLayout({
           margin="0"
           padding="0"
           horizontal="center"
+          suppressHydrationWarning
         >
           <RevealFx fill position="absolute">
             <Background

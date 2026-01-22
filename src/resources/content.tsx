@@ -120,14 +120,6 @@ challenging role.
           <>Guided students through the application and admission process.</>,
           <>Provided comprehensive support to ensure a smooth transition to their chosen university.</>,
         ],
-        images: [
-          {
-            src: "/images/work/work-1.jpg",
-            alt: "Work 1",
-            width: 16,
-            height: 9,
-          }
-        ],
       },
       {
         company: "Sagarmatha Teens Club",
@@ -138,14 +130,6 @@ challenging role.
           <>Organized educational workshops and events for youth empowerment.</>,
           <>Managed club activities and fostered a collaborative environment.</>,
         ],
-        images: [
-           {
-            src: "/images/work/work-2.jpg",
-            alt: "Work 2",
-            width: 16,
-            height: 9,
-          }
-        ],
       },
     ],
   },
@@ -154,15 +138,15 @@ challenging role.
     title: "Education & Certifications",
     institutions: [
       {
-        name: "Mechi Multiple Campus(Tribhuvan Universit)",
+        name: "Mechi Multiple Campus(Tribhuvan University)",
         description: <>Bachelor of Business Studies-Running</>,
       },
       {
-        name: "National Education Boar(NEB)",
+        name: "National Education Board(NEB)",
         description: <>High School</>,
       },
       {
-        name: "National Education Boar(NEB)",
+        name: "National Education Board(NEB)",
         description: <>School Leaving Certificate</>,
       },
       {

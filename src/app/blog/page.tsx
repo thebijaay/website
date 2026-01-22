@@ -26,7 +26,6 @@ export default function Blog() {
         author={{
           name: person.name,
           url: `${baseURL}/blog`,
-          image: `${baseURL}${person.avatar}`,
         }}
       />
       <Heading marginBottom="l" variant="heading-strong-xl" marginLeft="24">
@@ -39,7 +38,7 @@ export default function Blog() {
         <Heading as="h2" variant="heading-strong-xl" marginLeft="l">
           Earlier posts
         </Heading>
-        <Posts range={[4]} columns="2" />
+        <Posts range={[4]} columns="2" showCircularAvatar />
       </Column>
     </Column>
   );

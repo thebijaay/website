@@ -8,6 +8,8 @@ interface PostsProps {
   thumbnail?: boolean;
   direction?: "row" | "column";
   exclude?: string[];
+  showCircularAvatar?: boolean;
+  customImage?: string;
 }
 
 export function Posts({
@@ -16,6 +18,8 @@ export function Posts({
   thumbnail = false,
   exclude = [],
   direction,
+  showCircularAvatar,
+  customImage,
 }: PostsProps) {
   let allBlogs = getPosts(["src", "app", "blog", "posts"]);
 
@@ -36,9 +40,27 @@ export function Posts({
     <>
       {displayedBlogs.length > 0 && (
         <Grid columns={columns} s={{ columns: 1 }} fillWidth marginBottom="40" gap="16">
-          {displayedBlogs.map((post) => (
-            <Post key={post.slug} post={post} thumbnail={thumbnail} direction={direction} />
-          ))}
+          {displayedBlogs.map((post, index) => {
+            // Determine custom image based on position in range
+            let postCustomImage = customImage;
+            if (!postCustomImage && thumbnail) {
+              // Assign specific images for the first 3 posts when thumbnail is true
+              if (index === 0) postCustomImage = "/images/img-1.jpg";
+              else if (index === 1) postCustomImage = "/images/img-2.jpg";
+              else if (index === 2) postCustomImage = "/images/img-3.jpg";
+            }
+            
+            return (
+              <Post 
+                key={post.slug} 
+                post={post} 
+                thumbnail={thumbnail} 
+                direction={direction}
+                showCircularAvatar={showCircularAvatar}
+                customImage={postCustomImage}
+              />
+            );
+          })}
         </Grid>
       )}
     </>
