@@ -4,7 +4,6 @@ A professional portfolio showcasing Jay Prasad Majhi's expertise in Full-Stack D
 
 **Live Portfolio**: [jayprasad.com.np](https://www.jayprasad.com.np)
 
-![Portfolio Preview](public/images/og/home.jpg)
 
 ## About Jay Prasad Majhi
 
