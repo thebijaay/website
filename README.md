@@ -1,16 +1,39 @@
-# Magic Portfolio
+# Jay Prasad Majhi - Portfolio
 
-Magic Portfolio is a simple, clean, beginner-friendly portfolio template. It supports an MDX-based content system for projects and blog posts, an about / CV page and a gallery.
+A professional portfolio showcasing Jay Prasad Majhi's expertise in Full-Stack Development, Cybersecurity, and IT Professional services. Built with Next.js and Once UI, featuring a clean, responsive design optimized for showcasing technical skills, work experience, and professional achievements.
 
-View the demo [here](https://demo.magic-portfolio.com).
+**Live Portfolio**: [jayprasad.com.np](https://www.jayprasad.com.np)
 
-![Magic Portfolio](public/images/og/home.jpg)
+![Portfolio Preview](public/images/og/home.jpg)
 
-## Getting started
+## About Jay Prasad Majhi
+
+Dual-qualified professional with 3+ years of experience in admissions, visa processing, financial documentation, and IT support. Certified in Cybersecurity (CC), CompTIA CYSA+, and Microsoft Azure Fundamentals. Skilled in Salesforce CRM, student documentation, account reconciliation, and network security.
+
+**Specializations:**
+- Full-Stack Development
+- Cybersecurity & IT Support
+- Admission Counseling & Visa Processing
+- Financial Documentation
+- Salesforce CRM
+
+**Languages:** English, Nepali, Hindi
+
+## Portfolio Features
+
+This portfolio showcases:
+- **Professional Experience**: Work history at Oli & Associates Pvt. Ltd and Sagarmatha Teens Club
+- **Educational Background**: Studies at Mechi Multiple Campus (Tribhuvan University)
+- **Technical Skills**: Cybersecurity, Programming (C, C++, Java, Python, JavaScript, PHP), Database (MySQL, Oracle), Networking
+- **Certifications**: Certified Ethical Hacker (CEH), Microsoft Azure Fundamentals, CompTIA CYSA+
+- **Blog**: Technical articles and insights
+- **Gallery**: Professional photography and project visuals
+
+## Getting Started
 
 **1. Clone the repository**
 ```
-git clone https://github.com/once-ui-system/magic-portfolio.git
+git clone https://github.com/manishpaneru/website.git
 ```
 
 **2. Install dependencies**
@@ -23,22 +46,13 @@ npm install
 npm run dev
 ```
 
-**4. Edit config**
+**4. Customize content**
 ```
-src/resources/once-ui.config.js
-```
-
-**5. Edit content**
-```
-src/resources/content.js
+Edit src/resources/content.tsx for personal information
+Edit src/resources/once-ui.config.ts for styling
 ```
 
-**6. Create blog posts / projects**
-```
-Add a new .mdx file to src/app/blog/posts or src/app/work/projects
-```
-
-Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
+Built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). Requires Node.js v18.17+.
 
 ## Documentation
 
@@ -68,9 +82,13 @@ Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfo
 - A localized, earlier version of Magic Portfolio is available with the next-intl library
 - To use localization, switch to the 'i18n' branch
 
-## Creators
+## Contact & Connect
 
-Lorant One: [Threads](https://www.threads.net/@thebijaay) / [LinkedIn](https://www.linkedin.com/in/thebijay/)
+**Jay Prasad Majhi**
+- 📧 Email: [admin@jayprasad.com.np](mailto:admin@jayprasad.com.np)
+- 💼 LinkedIn: [Jay Prasad Majhi](https://www.linkedin.com/in/jay-prasad-majhi-277662237/)
+- 🐙 GitHub: [Jaymaji](https://github.com/Jaymaji)
+- 🌐 Website: [jayprasad.com.np](https://www.jayprasad.com.np)
 
 ## Get involved
 
