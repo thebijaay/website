@@ -13,7 +13,7 @@ const person: Person = {
   name: `Jay Prasad Majhi`,
   role: "Full-Stack Developer, Cybersecurity & IT Professional",
   avatar: "/images/avatar.jpeg",
-  email: "admin@jayprasad.com.np",
+  email: "it.assistant@usa.com",
   location: "Asia/Kathmandu", // IANA time zone for Nepal
   languages: ["English", "Nepali", "Hindi"],
 };
