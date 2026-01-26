@@ -12,7 +12,6 @@ const person: Person = {
   lastName: "Majhi",
   name: `Jay Prasad Majhi`,
   role: "Full-Stack Developer, Cybersecurity & IT Professional",
-  avatar: "/images/avatar.jpeg",
   email: "it.assistant@usa.com",
   location: "Asia/Kathmandu", // IANA time zone for Nepal
   languages: ["English", "Nepali", "Hindi"],
@@ -138,15 +137,15 @@ challenging role.
     title: "Education & Certifications",
     institutions: [
       {
-        name: "Mechi Multiple Campus(Tribhuvan University)",
+        name: "Mechi Multiple Campus (Tribhuvan University)",
         description: <>Bachelor of Business Studies-Running</>,
       },
       {
-        name: "National Education Board(NEB)",
+        name: "National Education Board (NEB)",
         description: <>High School</>,
       },
       {
-        name: "National Education Board(NEB)",
+        name: "National Education Board (NEB)",
         description: <>School Leaving Certificate</>,
       },
       {
@@ -207,6 +206,49 @@ const blog: Blog = {
   label: "Blog",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
+  posts: [
+    {
+      title: "The Importance of a Strong Online Presence for Businesses",
+      description: "In today's digital age, having a strong online presence is no longer just an option for businesses – it's a necessity. From attracting new customers to building brand credibility, a well-crafted online presence can make all the difference in the success of your business. In this blog post, we'll explore the importance of a strong online presence and provide actionable tips for improving yours.",
+      image: "/images/img-1.png",
+      date: "2024-04-01",
+      featured: true,
+      author: {
+        name: person.name,
+      },
+      tags: ["Online Presence", "Digital Marketing", "Business Growth"],
+    },
+    {
+      title: "10 Essential Cybersecurity Tips for Small Businesses",
+      description: "Small businesses are increasingly becoming targets for cyberattacks. With limited resources and a lack of dedicated IT support, small businesses are often more vulnerable to cyber threats than larger corporations. However, there are simple yet effective steps that small business owners can take to protect their data and systems. In this blog post, we'll share 10 essential cybersecurity tips for small businesses.",
+      image: "/images/img-2.jpg",
+      date: "2024-04-05",
+      author: {
+        name: person.name,
+      },
+      tags: ["Cybersecurity", "Small Business", "Data Protection"],
+    },
+    {
+      title: "The Future of Artificial Intelligence: Trends to Watch",
+      description: "Artificial intelligence (AI) is rapidly changing the world as we know it. From self-driving cars to personalized medicine, AI is poised to revolutionize every industry. In this blog post, we'll explore the latest trends in AI and discuss what the future holds for this transformative technology.",
+      image: "/images/img-3.jpg",
+      date: "2024-04-10",
+      author: {
+        name: person.name,
+      },
+      tags: ["Artificial Intelligence", "Future of Tech", "AI Trends"],
+    },
+    {
+      title: "How to Build a Successful E-commerce Business from Scratch",
+      description: "Starting an e-commerce business can be a daunting task. From choosing the right platform to marketing your products, there are a million and one things to consider. However, with the right strategy and execution, building a successful e-commerce business is well within reach. In this blog post, we'll walk you through the process of building a successful e-commerce business from scratch.",
+      image: "/images/img-4.jpg",
+      date: "2024-04-15",
+      author: {
+        name: person.name,
+      },
+      tags: ["E-commerce", "Entrepreneurship", "Online Business"],
+    },
+  ],
 };
 
 const work: Work = {

@@ -43,11 +43,11 @@ export default function Post({ post, thumbnail, direction, showCircularAvatar, c
         <Column maxWidth={28} paddingY="24" paddingX="l" gap="20" vertical="center">
           <Row gap="24" vertical="center">
             <Row vertical="center" gap="16">
-              {showCircularAvatar && (
+              {showCircularAvatar && person.avatar && (
                 <Avatar 
-                  src={person.avatar} 
+                  src={person.avatar}
                   size="s" 
-                  style={{ borderRadius: '50%' }}
+                  shape="circular"
                 />
               )}
               <Text variant="label-default-s">{person.name}</Text>
