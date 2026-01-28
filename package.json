@@ -1,5 +1,5 @@
 {
-  "name": "jay-prasad-majhi-Full Stack Developer",
+  "name": "jay-prasad-majhi-full-stack-developer",
   "version": "1.0.0",
   "private": true,
   "description": "Portfolio of Jay Prasad Majhi - Admission Officer | Full Stack Developer",
@@ -43,6 +43,6 @@
     "tzdata": "^1.0.44"
   },
   "engines": {
-    "node": ">=20.9.0"
+    "node": "20.x"
   }
 }
