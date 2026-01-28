@@ -12,7 +12,13 @@ interface PostProps {
   customImage?: string;
 }
 
-export default function Post({ post, thumbnail, direction, showCircularAvatar, customImage }: PostProps) {
+export default function Post({
+  post,
+  thumbnail,
+  direction,
+  showCircularAvatar,
+  customImage,
+}: PostProps) {
   return (
     <Card
       fillWidth
@@ -39,26 +45,29 @@ export default function Post({ post, thumbnail, direction, showCircularAvatar, c
           aspectRatio="16 / 9"
         />
       )}
+
       <Row fillWidth>
         <Column maxWidth={28} paddingY="24" paddingX="l" gap="20" vertical="center">
           <Row gap="24" vertical="center">
             <Row vertical="center" gap="16">
               {showCircularAvatar && person.avatar && (
-                <Avatar 
+                <Avatar
                   src={person.avatar}
-                  size="s" 
-                  shape="circular"
+                  size="s"
                 />
               )}
               <Text variant="label-default-s">{person.name}</Text>
             </Row>
+
             <Text variant="body-default-xs" onBackground="neutral-weak">
               {formatDate(post.metadata.publishedAt, false)}
             </Text>
           </Row>
+
           <Text variant="heading-strong-l" wrap="balance">
             {post.metadata.title}
           </Text>
+
           {post.metadata.tag && (
             <Text variant="label-strong-s" onBackground="neutral-weak">
               {post.metadata.tag}
