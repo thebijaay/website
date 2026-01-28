@@ -1,12 +1,12 @@
 {
-  "name": "jay-prasad-majhi-portfolio",
+  "name": "jay-prasad-majhi-Full Stack Developer",
   "version": "1.0.0",
   "private": true,
-  "description": "Portfolio of Jay Prasad Majhi - Admission Officer | Cybersecurity & IT Professional",
+  "description": "Portfolio of Jay Prasad Majhi - Admission Officer | Full Stack Developer",
   "homepage": "https://jayprasad.com.np",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thebijaay/portfolio"
+    "url": "https://github.com/thebijaay/website"
   },
   "author": "Jay Prasad Majhi <it@jayprasad.com.np>",
   "license": "CC BY-NC 4.0",
