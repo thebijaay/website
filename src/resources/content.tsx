@@ -106,7 +106,6 @@ const blog: Blog = {
   label: "Blog",
   title: "Writing about design and tech...",
   description: `Read what ${person.name} has been up to recently`,
-  posts: [],
 };
 
 const work: Work = {
