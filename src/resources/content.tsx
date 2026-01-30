@@ -50,7 +50,7 @@ const home: Home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name} – Full-Stack Developer`,
-  description: `Front-End Developer | ${person.role}`,
+  description: `Full-Stack Developer | Cybersecurity | IT Professional`,
   headline: <>Full-Stack Developer, Cybersecurity & IT Professional</>,
   featured: {
     display: false,
@@ -59,9 +59,9 @@ const home: Home = {
   },
   subline: (
     <>
-      Dual-qualified professional with 3+ years of experience in admissions, visa processing,
-      financial documentation, and IT support. Certified in Cybersecurity (CC), CompTIA CYSA+,
-      and Microsoft Azure Fundamentals.
+      Dual-qualified professional with 3+ years of experience in student admissions,
+      visa processing, financial documentation, and IT support. Certified in
+      Cybersecurity (CC), CompTIA CySA+, and Microsoft Azure Fundamentals.
     </>
   ),
 };
@@ -70,56 +70,145 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role}`,
   tableOfContent: { display: true, subItems: false },
   avatar: { display: true },
   calendar: { display: false, link: "" },
+
   intro: {
     display: true,
-    title: "Introduction",
+    title: "Professional Summary",
     description: (
       <>
-        Dual-qualified professional with strong experience in IT support, cybersecurity,
-        documentation, and business operations.
+        Dual-qualified professional with 3+ years of experience in student admissions,
+        visa processing, financial documentation, and IT support. Strong expertise in
+        cybersecurity, CRM systems, and business operations, seeking to leverage
+        technical and operational skills in a challenging professional role.
       </>
     ),
   },
+
   work: {
     display: true,
     title: "Work Experience",
-    experiences: [],
+    experiences: [
+      {
+        company: "Oli & Associates Pvt. Ltd",
+        role: "Admission, Account & Documentation Officer",
+        period: "July 2022 – Present",
+        description: (
+          <>
+            <ul>
+              <li>Managed end-to-end student admission and visa documentation processes</li>
+              <li>Prepared and submitted visa applications and GS documentation</li>
+              <li>Handled account reconciliation, data entry, and financial reporting</li>
+              <li>Used Salesforce CRM to track applications and client communication</li>
+              <li>Maintained accurate student records and compliance documentation</li>
+            </ul>
+          </>
+        ),
+      },
+      {
+        company: "Sagarmatha Teens Club, Koshi Province",
+        role: "Vice President",
+        period: "December 2019 – November 2021",
+        description: (
+          <>
+            <ul>
+              <li>Led team operations and administrative planning</li>
+              <li>Organized youth-focused community initiatives and programs</li>
+            </ul>
+          </>
+        ),
+      },
+    ],
   },
+
   studies: {
     display: true,
     title: "Education & Certifications",
-    institutions: [],
+    institutions: [
+      {
+        name: "Mechi Multiple Campus, Bhadrapur",
+        degree: "Bachelor of Business Studies (BBS)",
+        period: "December 2021 – Present",
+        description: "Business, Finance, Management, Taxation, Auditing",
+      },
+      {
+        name: "Laxmi Prasad Devkota Secondary School",
+        degree: "School Leaving Certificate (Management)",
+        period: "2019 – 2021",
+        description: "Computer Science & Business Math",
+      },
+      {
+        name: "Swarnim Shiksha Sadan Secondary School",
+        degree: "Secondary Education Examination (SEE)",
+        period: "2018 – 2019",
+        description: "",
+      },
+    ],
   },
+
   technical: {
     display: true,
     title: "Technical Skills",
-    skills: [],
+    skills: [
+      {
+        title: "Cybersecurity",
+        items: [
+          "Network Security",
+          "Access Controls",
+          "Security Infrastructure",
+          "Threat Analysis",
+        ],
+      },
+      {
+        title: "CRM Software",
+        items: ["Salesforce"],
+      },
+      {
+        title: "Data Analytics",
+        items: ["Data Science", "Analytical Tools"],
+      },
+      {
+        title: "Education Consulting",
+        items: ["Visa Processing", "GS Documentation", "Admissions", "Student Counseling"],
+      },
+      {
+        title: "Cloud Computing",
+        items: ["Microsoft Azure", "Cloud Management"],
+      },
+      {
+        title: "Web Development",
+        items: ["Front-End Engineering", "Website Management"],
+      },
+      {
+        title: "Business Operations",
+        items: ["Accounting", "Financial Reporting", "Documentation", "Client Communication"],
+      },
+    ],
   },
 };
 
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
+  title: "Writing about technology & cybersecurity",
+  description: `Insights and updates by ${person.name}`,
 };
 
 const work: Work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  description: `Technical, cybersecurity, and web projects by ${person.name}`,
 };
 
 const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
+  title: `Gallery – ${person.name}`,
+  description: "Moments, events, and professional highlights",
   images: [],
 };
 
