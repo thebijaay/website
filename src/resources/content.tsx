@@ -13,8 +13,8 @@ const person: Person = {
 
 const newsletter: Newsletter = {
   display: false,
-  title: `Subscribe to ${person.firstName}'s Newsletter`,
-  description: "Insights on technology, cybersecurity, and IT",
+  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  description: <>Insights on technology, cybersecurity, and IT</>,
 };
 
 const social: Social = [
@@ -30,9 +30,15 @@ const home: Home = {
   label: "Home",
   title: `${person.name} – Cybersecurity & IT Professional`,
   description: "Cybersecurity | IT Support | Business Operations",
-  headline: "Cybersecurity & IT Professional",
-  featured: { display: false, title: "", href: "" },
-  subline: "Dual-qualified professional with 3+ years of experience in student admissions, visa processing, financial documentation, and IT support. Certified in Cybersecurity (CC), CompTIA CySA+, and Microsoft Azure Fundamentals.",
+  headline: <>Cybersecurity & IT Professional</>,
+  featured: { display: false, title: <></>, href: "" },
+  subline: (
+    <>
+      Dual-qualified professional with 3+ years of experience in student admissions,
+      visa processing, financial documentation, and IT support. Certified in
+      Cybersecurity (CC), CompTIA CySA+, and Microsoft Azure Fundamentals.
+    </>
+  ),
 };
 
 const about: About = {
@@ -47,7 +53,14 @@ const about: About = {
   intro: {
     display: true,
     title: "Professional Summary",
-    description: "Dual-qualified professional with 3+ years of experience in student admissions, visa processing, financial documentation, and IT support. Skilled in Salesforce CRM, account reconciliation, student documentation, and network security. Career goal is to leverage business operations and IT expertise in a challenging role.",
+    description: (
+      <>
+        Dual-qualified professional with 3+ years of experience in student admissions,
+        visa processing, financial documentation, and IT support. Skilled in Salesforce
+        CRM, account reconciliation, student documentation, and network security.
+        Career goal is to leverage business operations and IT expertise in a challenging role.
+      </>
+    ),
   },
 
   work: {
@@ -59,12 +72,12 @@ const about: About = {
         role: "Admission, Account & Documentation Officer",
         timeframe: "July 2022 – Present",
         achievements: [
-          "Managed end-to-end student admission processes",
-          "Handled visa documentation and compliance requirements",
-          "Prepared and submitted visa applications and GS documentation",
-          "Performed account reconciliation, data entry, and financial reporting",
-          "Used Salesforce CRM to track student profiles and application status",
-          "Maintained accurate student and compliance records",
+          <>Managed end-to-end student admission processes</>,
+          <>Handled visa documentation and compliance requirements</>,
+          <>Prepared and submitted visa applications and GS documentation</>,
+          <>Performed account reconciliation, data entry, and financial reporting</>,
+          <>Used Salesforce CRM to track student profiles and application status</>,
+          <>Maintained accurate student and compliance records</>,
         ],
       },
       {
@@ -72,8 +85,8 @@ const about: About = {
         role: "Vice President",
         timeframe: "December 2019 – November 2021",
         achievements: [
-          "Led team operations and organizational planning",
-          "Organized youth-focused community initiatives",
+          <>Led team operations and organizational planning</>,
+          <>Organized youth-focused community initiatives</>,
         ],
       },
     ],
@@ -88,21 +101,25 @@ const about: About = {
         degree: "Bachelor of Business Studies (BBS)",
         timeframe: "December 2021 – Present",
         details: [
-          "Business, Finance, Management, Taxation, Auditing",
-          "Location: Jhapa, Nepal",
+          <>Business, Finance, Management, Taxation, Auditing</>,
+          <>Location: Jhapa, Nepal</>,
         ],
       },
       {
         name: "Laxmi Prasad Devkota Secondary School",
         degree: "School Leaving Certificate (Management)",
         timeframe: "2019 – 2021",
-        details: ["Computer Science", "Business Math", "Location: Jhapa, Nepal"],
+        details: [
+          <>Computer Science</>,
+          <>Business Math</>,
+          <>Location: Jhapa, Nepal</>,
+        ],
       },
       {
         name: "Swarnim Shiksha Sadan Secondary School",
         degree: "Secondary Education Examination (SEE)",
         timeframe: "2018 – 2019",
-        details: ["Location: Jhapa, Nepal"],
+        details: [<>Location: Jhapa, Nepal</>],
       },
     ],
   },
