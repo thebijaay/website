@@ -7,7 +7,7 @@ const person: Person = {
   role: "Full-Stack Developer, Cybersecurity & IT Professional",
   avatar: "/images/avatar.jpeg",
   email: "it@jayprasad.com.np",
-  location: "Kathmandu/Asia",
+  location: "Asia/Kathmandu", // ✅ FIXED: valid IANA timezone
   languages: ["English", "Nepali"],
 };
 
@@ -93,7 +93,7 @@ const about: About = {
     experiences: [
       {
         company: "Oli & Associates Pvt. Ltd",
-        role: "Admission, Account & Documentation Officer",
+        role: "Admission, Account Officer",
         period: "July 2022 – Present",
         description: (
           <ul>
@@ -128,15 +128,13 @@ const about: About = {
         name: "Mechi Multiple Campus, Bhadrapur",
         degree: "Bachelor of Business Studies (BBS)",
         period: "December 2021 – Present",
-        description:
-          "Business, Finance, Management, Taxation, Auditing | Jhapa, Nepal",
+        description: "Business, Finance, Management, Taxation, Auditing | Jhapa, Nepal",
       },
       {
         name: "Laxmi Prasad Devkota Secondary School",
         degree: "School Leaving Certificate (Management)",
         period: "2019 – 2021",
-        description:
-          "Computer Science, Business Math | Jhapa, Nepal",
+        description: "Computer Science, Business Math | Jhapa, Nepal",
       },
       {
         name: "Swarnim Shiksha Sadan Secondary School",
