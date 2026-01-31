@@ -7,7 +7,7 @@ const person: Person = {
   role: "Full-Stack Developer, Cybersecurity & IT Professional",
   avatar: "/images/avatar.jpeg",
   email: "it@jayprasad.com.np",
-  location: "Asia/Kathmandu", // ✅ Correct IANA timezone
+  location: "Asia/Kathmandu", // ✅ valid IANA timezone
   languages: ["English", "Nepali"],
 };
 
@@ -93,29 +93,25 @@ const about: About = {
     experiences: [
       {
         company: "Oli & Associates Pvt. Ltd",
-        role: "Admission, Account Officer",
-        period: "July 2022 – Present",
-        description: (
-          <ul>
-            <li>Managed end-to-end student admission processes</li>
-            <li>Handled visa documentation and compliance requirements</li>
-            <li>Prepared and submitted visa applications and GS documentation</li>
-            <li>Performed account reconciliation, data entry, and financial reporting</li>
-            <li>Used Salesforce CRM to track student profiles and application status</li>
-            <li>Maintained accurate student and compliance records</li>
-          </ul>
-        ),
+        role: "Admission, Account & Documentation Officer",
+        timeframe: "July 2022 – Present",
+        achievements: [
+          <>Managed end-to-end student admission processes</>,
+          <>Handled visa documentation and compliance requirements</>,
+          <>Prepared and submitted visa applications and GS documentation</>,
+          <>Performed account reconciliation, data entry, and financial reporting</>,
+          <>Used Salesforce CRM to track student profiles and application status</>,
+          <>Maintained accurate student and compliance records</>,
+        ],
       },
       {
         company: "Sagarmatha Teens Club, Koshi Province",
         role: "Vice President",
-        period: "December 2019 – November 2021",
-        description: (
-          <ul>
-            <li>Led team operations and organizational planning</li>
-            <li>Organized youth-focused community initiatives</li>
-          </ul>
-        ),
+        timeframe: "December 2019 – November 2021",
+        achievements: [
+          <>Led team operations and organizational planning</>,
+          <>Organized youth-focused community initiatives</>,
+        ],
       },
     ],
   },
