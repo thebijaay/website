@@ -7,7 +7,7 @@ const person: Person = {
   role: "Full-Stack Developer, Cybersecurity & IT Professional",
   avatar: "/images/avatar.jpeg",
   email: "it@jayprasad.com.np",
-  location: "Asia/Kathmandu", // ✅ valid IANA timezone
+  location: "Asia/Kathmandu",
   languages: ["English", "Nepali"],
 };
 
@@ -51,11 +51,7 @@ const home: Home = {
   title: `${person.name} – Cybersecurity & IT Professional`,
   description: "Cybersecurity | IT Support | Business Operations",
   headline: <>Cybersecurity & IT Professional</>,
-  featured: {
-    display: false,
-    title: <></>,
-    href: "",
-  },
+  featured: { display: false, title: <></>, href: "" },
   subline: (
     <>
       Dual-qualified professional with 3+ years of experience in student admissions,
@@ -123,20 +119,29 @@ const about: About = {
       {
         name: "Mechi Multiple Campus, Bhadrapur",
         degree: "Bachelor of Business Studies (BBS)",
-        period: "December 2021 – Present",
-        description: "Business, Finance, Management, Taxation, Auditing | Jhapa, Nepal",
+        timeframe: "December 2021 – Present",
+        details: [
+          <>Business, Finance, Management, Taxation, Auditing</>,
+          <>Location: Jhapa, Nepal</>,
+        ],
       },
       {
         name: "Laxmi Prasad Devkota Secondary School",
         degree: "School Leaving Certificate (Management)",
-        period: "2019 – 2021",
-        description: "Computer Science, Business Math | Jhapa, Nepal",
+        timeframe: "2019 – 2021",
+        details: [
+          <>Computer Science</>,
+          <>Business Math</>,
+          <>Location: Jhapa, Nepal</>,
+        ],
       },
       {
         name: "Swarnim Shiksha Sadan Secondary School",
         degree: "Secondary Education Examination (SEE)",
-        period: "2018 – 2019",
-        description: "Jhapa, Nepal",
+        timeframe: "2018 – 2019",
+        details: [
+          <>Location: Jhapa, Nepal</>,
+        ],
       },
     ],
   },
@@ -145,34 +150,13 @@ const about: About = {
     display: true,
     title: "Technical Skills",
     skills: [
-      {
-        title: "Cybersecurity",
-        items: ["Network Security", "Access Controls", "Security Infrastructure", "Threat Analysis"],
-      },
-      {
-        title: "CRM Software",
-        items: ["Salesforce"],
-      },
-      {
-        title: "Data Analytics",
-        items: ["Data Science", "Analytical Tools"],
-      },
-      {
-        title: "Education Consulting",
-        items: ["Visa Processing", "GS Documentation", "Admissions", "Student Counseling"],
-      },
-      {
-        title: "Cloud Computing",
-        items: ["Microsoft Azure", "Cloud Management"],
-      },
-      {
-        title: "Web Development",
-        items: ["Front-End Engineering", "Website Management"],
-      },
-      {
-        title: "Business Operations",
-        items: ["Accounting", "Financial Reporting", "Documentation", "Client Communication"],
-      },
+      { title: "Cybersecurity", items: ["Network Security", "Access Controls", "Security Infrastructure", "Threat Analysis"] },
+      { title: "CRM Software", items: ["Salesforce"] },
+      { title: "Data Analytics", items: ["Data Science", "Analytical Tools"] },
+      { title: "Education Consulting", items: ["Visa Processing", "GS Documentation", "Admissions", "Student Counseling"] },
+      { title: "Cloud Computing", items: ["Microsoft Azure", "Cloud Management"] },
+      { title: "Web Development", items: ["Front-End Engineering", "Website Management"] },
+      { title: "Business Operations", items: ["Accounting", "Financial Reporting", "Documentation", "Client Communication"] },
     ],
   },
 
