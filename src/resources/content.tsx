@@ -7,7 +7,7 @@ const person: Person = {
   role: "Full-Stack Developer, Cybersecurity & IT Professional",
   avatar: "/images/avatar.jpeg",
   email: "it@jayprasad.com.np",
-  location: "Kathmandu, Asia",
+  location: "Kathmandu/Asia",
   languages: ["English", "Nepali"],
 };
 
