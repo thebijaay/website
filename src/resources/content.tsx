@@ -98,7 +98,7 @@ const about: About = {
     institutions: [
       {
         name: "Mechi Multiple Campus, Bhadrapur",
-        degree: "Bachelor of Business Studies (BBS)",
+        description: <>Bachelor of Business Studies (BBS)</>,
         timeframe: "December 2021 – Present",
         details: [
           <>Business, Finance, Management, Taxation, Auditing</>,
@@ -107,7 +107,7 @@ const about: About = {
       },
       {
         name: "Laxmi Prasad Devkota Secondary School",
-        degree: "School Leaving Certificate (Management)",
+        description: <>School Leaving Certificate (Management)</>,
         timeframe: "2019 – 2021",
         details: [
           <>Computer Science</>,
@@ -117,7 +117,7 @@ const about: About = {
       },
       {
         name: "Swarnim Shiksha Sadan Secondary School",
-        degree: "Secondary Education Examination (SEE)",
+        description: <>Secondary Education Examination (SEE)</>,
         timeframe: "2018 – 2019",
         details: [<>Location: Jhapa, Nepal</>],
       },
@@ -128,13 +128,22 @@ const about: About = {
     display: true,
     title: "Technical Skills",
     skills: [
-      { title: "Cybersecurity", items: ["Network Security", "Access Controls", "Security Infrastructure", "Threat Analysis"] },
+      {
+        title: "Cybersecurity",
+        items: ["Network Security", "Access Controls", "Security Infrastructure", "Threat Analysis"],
+      },
       { title: "CRM Software", items: ["Salesforce"] },
       { title: "Data Analytics", items: ["Data Science", "Analytical Tools"] },
-      { title: "Education Consulting", items: ["Visa Processing", "GS Documentation", "Admissions", "Student Counseling"] },
+      {
+        title: "Education Consulting",
+        items: ["Visa Processing", "GS Documentation", "Admissions", "Student Counseling"],
+      },
       { title: "Cloud Computing", items: ["Microsoft Azure", "Cloud Management"] },
       { title: "Web Development", items: ["Front-End Engineering", "Website Management"] },
-      { title: "Business Operations", items: ["Accounting", "Financial Reporting", "Documentation", "Client Communication"] },
+      {
+        title: "Business Operations",
+        items: ["Accounting", "Financial Reporting", "Documentation", "Client Communication"],
+      },
     ],
   },
 
