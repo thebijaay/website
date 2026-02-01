@@ -185,7 +185,17 @@ const gallery: Gallery = {
   label: "Gallery",
   title: `Gallery – ${person.name}`,
   description: "Professional moments and achievements",
-  images: [],
+  images: [
+    { src: "/images/gallery/horizontal-1.jpeg", alt: "Professional moment", orientation: "horizontal" },
+    { src: "/images/gallery/horizontal-2.jfif", alt: "Professional moment", orientation: "horizontal" },
+    { src: "/images/gallery/horizontal-3.jfif", alt: "Professional moment", orientation: "horizontal" },
+    { src: "/images/gallery/horizontal-4.jpeg", alt: "Professional moment", orientation: "horizontal" },
+    { src: "/images/gallery/horizontal-5.jfif", alt: "Professional moment", orientation: "horizontal" },
+    { src: "/images/gallery/vertical-1.jpeg", alt: "Professional moment", orientation: "vertical" },
+    { src: "/images/gallery/vertical-2.jfif", alt: "Professional moment", orientation: "vertical" },
+    { src: "/images/gallery/vertical-3.jfif", alt: "Professional moment", orientation: "vertical" },
+    { src: "/images/gallery/vertical-4.jpeg", alt: "Professional moment", orientation: "vertical" },
+  ],
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };

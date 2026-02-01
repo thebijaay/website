@@ -177,6 +177,10 @@ export interface About extends BasePageConfig {
       name: string;
       /** Description of studies */
       description: React.ReactNode;
+      /** Timeframe of study */
+      timeframe?: string;
+      /** Additional details about the study */
+      details?: React.ReactNode[];
     }>;
   };
   /** Technical skills section */
@@ -191,6 +195,8 @@ export interface About extends BasePageConfig {
       title: string;
       /** Skill description */
       description?: React.ReactNode;
+      /** Skill items (alternative to tags) */
+      items?: string[];
       /** Skill tags */
       tags?: Array<{
         name: string;
@@ -208,6 +214,15 @@ export interface About extends BasePageConfig {
         height: number;
       }>;
     }>;
+  };
+  /** Certifications section */
+  certifications?: {
+    /** Whether to display certifications section */
+    display: boolean;
+    /** Title for the certifications section */
+    title: string;
+    /** List of certification names */
+    items: string[];
   };
 }
 
