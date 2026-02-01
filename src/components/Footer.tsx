@@ -1,4 +1,4 @@
-import { Row, IconButton, SmartLink, Text } from "@once-ui-system/core";
+import { Row, Column, IconButton, SmartLink, Text } from "@once-ui-system/core";
 import { person, social } from "@/resources";
 import styles from "./Footer.module.scss";
 
@@ -6,7 +6,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <Row as="footer" fillWidth padding="8" horizontal="center" s={{ direction: "column" }}>
+    <Column as="footer" fillWidth padding="8" horizontal="center" gap="8">
       <Row
         className={styles.mobile}
         maxWidth="m"
@@ -46,7 +46,20 @@ export const Footer = () => {
           )}
         </Row>
       </Row>
+      <Row gap="16" horizontal="center" paddingBottom="8">
+        <SmartLink href="/privacy-policy">
+          <Text variant="body-default-xs" onBackground="neutral-weak">
+            Privacy Policy
+          </Text>
+        </SmartLink>
+        <Text variant="body-default-xs" onBackground="neutral-weak">|</Text>
+        <SmartLink href="/terms-conditions">
+          <Text variant="body-default-xs" onBackground="neutral-weak">
+            Terms & Conditions
+          </Text>
+        </SmartLink>
+      </Row>
       <Row height="80" hide s={{ hide: false }} />
-    </Row>
+    </Column>
   );
 };
