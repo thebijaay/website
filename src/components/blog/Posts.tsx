@@ -49,12 +49,12 @@ export function Posts({
               else if (index === 1) postCustomImage = "/images/img-2.jpg";
               else if (index === 2) postCustomImage = "/images/img-3.jpg";
             }
-            
+
             return (
-              <Post 
-                key={post.slug} 
-                post={post} 
-                thumbnail={thumbnail} 
+              <Post
+                key={post.slug}
+                post={post}
+                thumbnail={thumbnail}
                 direction={direction}
                 showCircularAvatar={showCircularAvatar}
                 customImage={postCustomImage}

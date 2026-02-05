@@ -52,7 +52,9 @@ export const Footer = () => {
             Privacy Policy
           </Text>
         </SmartLink>
-        <Text variant="body-default-xs" onBackground="neutral-weak">|</Text>
+        <Text variant="body-default-xs" onBackground="neutral-weak">
+          |
+        </Text>
         <SmartLink href="/terms-conditions">
           <Text variant="body-default-xs" onBackground="neutral-weak">
             Terms & Conditions
