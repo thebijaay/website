@@ -34,9 +34,9 @@ const home: Home = {
   featured: { display: false, title: <></>, href: "" },
   subline: (
     <>
-      Dual-qualified professional with 3+ years of experience in student admissions,
-      visa processing, financial documentation, and IT support. Certified in
-      Cybersecurity (CC), CompTIA CySA+, and Microsoft Azure Fundamentals.
+      Dual-qualified professional with 3+ years of experience in student admissions, visa
+      processing, financial documentation, and IT support. Certified in Cybersecurity (CC), CompTIA
+      CySA+, and Microsoft Azure Fundamentals.
     </>
   ),
 };
@@ -55,10 +55,10 @@ const about: About = {
     title: "Professional Summary",
     description: (
       <>
-        Dual-qualified professional with 3+ years of experience in student admissions,
-        visa processing, financial documentation, and IT support. Skilled in Salesforce
-        CRM, account reconciliation, student documentation, and network security.
-        Career goal is to leverage business operations and IT expertise in a challenging role.
+        Dual-qualified professional with 3+ years of experience in student admissions, visa
+        processing, financial documentation, and IT support. Skilled in Salesforce CRM, account
+        reconciliation, student documentation, and network security. Career goal is to leverage
+        business operations and IT expertise in a challenging role.
       </>
     ),
   },
@@ -109,11 +109,7 @@ const about: About = {
         name: "Laxmi Prasad Devkota Secondary School",
         description: <>School Leaving Certificate (Management)</>,
         timeframe: "2019 – 2021",
-        details: [
-          <>Computer Science</>,
-          <>Business Math</>,
-          <>Location: Jhapa, Nepal</>,
-        ],
+        details: [<>Computer Science</>, <>Business Math</>, <>Location: Jhapa, Nepal</>],
       },
       {
         name: "Swarnim Shiksha Sadan Secondary School",
@@ -130,7 +126,12 @@ const about: About = {
     skills: [
       {
         title: "Cybersecurity",
-        items: ["Network Security", "Access Controls", "Security Infrastructure", "Threat Analysis"],
+        items: [
+          "Network Security",
+          "Access Controls",
+          "Security Infrastructure",
+          "Threat Analysis",
+        ],
       },
       { title: "CRM Software", items: ["Salesforce"] },
       { title: "Data Analytics", items: ["Data Science", "Analytical Tools"] },
@@ -186,14 +187,34 @@ const gallery: Gallery = {
   title: `Gallery – ${person.name}`,
   description: "Professional moments and achievements",
   images: [
-    { src: "/images/gallery/horizontal-1.jpeg", alt: "Professional moment", orientation: "horizontal" },
-    { src: "/images/gallery/horizontal-2.jfif", alt: "Professional moment", orientation: "horizontal" },
-    { src: "/images/gallery/horizontal-3.jfif", alt: "Professional moment", orientation: "horizontal" },
-    { src: "/images/gallery/horizontal-4.jpeg", alt: "Professional moment", orientation: "horizontal" },
-    { src: "/images/gallery/horizontal-5.jfif", alt: "Professional moment", orientation: "horizontal" },
+    {
+      src: "/images/gallery/horizontal-1.jpeg",
+      alt: "Professional moment",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/horizontal-2.jpeg",
+      alt: "Professional moment",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/horizontal-3.jpeg",
+      alt: "Professional moment",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/horizontal-4.jpeg",
+      alt: "Professional moment",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/horizontal-5.jpeg",
+      alt: "Professional moment",
+      orientation: "horizontal",
+    },
     { src: "/images/gallery/vertical-1.jpeg", alt: "Professional moment", orientation: "vertical" },
-    { src: "/images/gallery/vertical-2.jfif", alt: "Professional moment", orientation: "vertical" },
-    { src: "/images/gallery/vertical-3.jfif", alt: "Professional moment", orientation: "vertical" },
+    { src: "/images/gallery/vertical-2.jpeg", alt: "Professional moment", orientation: "vertical" },
+    { src: "/images/gallery/vertical-3.jpeg", alt: "Professional moment", orientation: "vertical" },
     { src: "/images/gallery/vertical-4.jpeg", alt: "Professional moment", orientation: "vertical" },
   ],
 };
