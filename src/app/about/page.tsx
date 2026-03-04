@@ -274,13 +274,22 @@ export default function About() {
               </Heading>
               <Column fillWidth gap="l">
                 {about.technical.skills.map((skill, index) => (
-                  <Column key={`${skill}-${index}`} fillWidth gap="4">
+                  <Column key={`${skill.title}-${index}`} fillWidth gap="m">
                     <Text id={skill.title} variant="heading-strong-l">
                       {skill.title}
                     </Text>
                     <Text variant="body-default-m" onBackground="neutral-weak">
                       {skill.description}
                     </Text>
+                    {skill.items && skill.items.length > 0 && (
+                      <Column as="ul" gap="8" paddingLeft="16">
+                        {skill.items.map((item, itemIndex) => (
+                          <Text as="li" key={itemIndex} variant="body-default-m">
+                            {item}
+                          </Text>
+                        ))}
+                      </Column>
+                    )}
                     {skill.tags && skill.tags.length > 0 && (
                       <Row wrap gap="8" paddingTop="8">
                         {skill.tags.map((tag, tagIndex) => (
