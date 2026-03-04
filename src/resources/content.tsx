@@ -4,7 +4,7 @@ const person: Person = {
   firstName: "Jay Prasad",
   lastName: "Majhi",
   name: "Jay Prasad Majhi",
-  role: "Full-Stack Developer, Cybersecurity & IT Professional",
+  role: "Data Science, Cloud Computing, and Software Development Professional",
   avatar: "/images/avatar.jpeg",
   email: "it@jayprasad.com.np",
   location: "Asia/Kathmandu",
@@ -28,15 +28,14 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name} – Cybersecurity & IT Professional`,
-  description: "Cybersecurity | IT Support | Business Operations",
-  headline: <>Cybersecurity & IT Professional</>,
+  title: `${person.name} – Data Science & IT Professional`,
+  description: "Data Science | Cloud Computing | Software Development",
+  headline: <>Data Science & IT Professional</>,
   featured: { display: false, title: <></>, href: "" },
   subline: (
     <>
-      Dual-qualified professional with 3+ years of experience in student admissions, visa
-      processing, financial documentation, and IT support. Certified in Cybersecurity (CC), CompTIA
-      CySA+, and Microsoft Azure Fundamentals.
+      I am a passionate Data Science, Cloud Computing, and Software Development professional with
+      strong expertise in AI, analytics, cybersecurity, and digital technologies.
     </>
   ),
 };
@@ -52,13 +51,16 @@ const about: About = {
 
   intro: {
     display: true,
-    title: "Professional Summary",
+    title: "About Me",
     description: (
       <>
-        Dual-qualified professional with 3+ years of experience in student admissions, visa
-        processing, financial documentation, and IT support. Skilled in Salesforce CRM, account
-        reconciliation, student documentation, and network security. Career goal is to leverage
-        business operations and IT expertise in a challenging role.
+        I am a passionate Data Science, Cloud Computing, and Software Development professional with
+        strong expertise in AI, analytics, cybersecurity, and digital technologies. I hold multiple
+        internationally recognized certifications across data science, cloud platforms,
+        cybersecurity, and digital marketing.
+        <br />
+        <br />I am committed to continuous learning and innovation, with hands-on experience in AI
+        development, analytics, full-stack web development, and cloud technologies.
       </>
     ),
   },
@@ -122,47 +124,62 @@ const about: About = {
 
   technical: {
     display: true,
-    title: "Technical Skills",
+    title: "Professional Certifications",
     skills: [
+      {
+        title: "Professional Certifications",
+        items: ["CertNexus Certified Data Science Practitioner"],
+      },
+      {
+        title: "Cloud Computing & IT",
+        items: [
+          "AWS Certified Developer – Associate (Coursera)",
+          "Google Cloud Generative AI Leader (Coursera)",
+          "AWS Generative AI & AI Agents with Amazon Bedrock (Coursera)",
+        ],
+      },
+      {
+        title: "Data Science & Analytics",
+        items: [
+          "R for Data Science: Analysis and Visualization – LinkedIn",
+          "Python for AI Projects: From Data Exploration to Impact – LinkedIn",
+          "Complete Guide to Python for Data Engineering: Beginner to Advanced – LinkedIn",
+          "Deloitte Australia – Data Analytics Job Simulation – Forage",
+          "Data Analytics – HP LIFE",
+        ],
+      },
+      {
+        title: "Software Engineering & Development",
+        items: [
+          "Full-Stack Web Development — University of London (Coursera)",
+          "Skyscanner – Front-End Software Engineering – Forage",
+          "Quantium – Data Analytics – Forage",
+        ],
+      },
       {
         title: "Cybersecurity",
         items: [
-          "Network Security",
-          "Access Controls",
-          "Security Infrastructure",
-          "Threat Analysis",
+          "CompTIA Cybersecurity Analyst: Network Security Concepts – Skillsoft",
+          "Certified in Cybersecurity (CC): Networking & Security Infrastructure – Skillsoft",
+          "Certified in Cybersecurity (CC): Logical Access Controls – Skillsoft",
+          "Tata – Cybersecurity Analyst – Forage",
         ],
       },
-      { title: "CRM Software", items: ["Salesforce"] },
-      { title: "Data Analytics", items: ["Data Science", "Analytical Tools"] },
       {
-        title: "Education Consulting",
-        items: ["Visa Processing", "GS Documentation", "Admissions", "Student Counseling"],
+        title: "Digital Marketing & Analytics",
+        items: [
+          "Certified in Google Analytics (Analytics 4) – Google / Skillshop",
+          "Gemini Certified Educator – Google",
+          "LinkedIn Marketing Strategy Certification – LinkedIn",
+        ],
       },
-      { title: "Cloud Computing", items: ["Microsoft Azure", "Cloud Management"] },
-      { title: "Web Development", items: ["Front-End Engineering", "Website Management"] },
       {
-        title: "Business Operations",
-        items: ["Accounting", "Financial Reporting", "Documentation", "Client Communication"],
+        title: "Education & Counselling Certifications",
+        items: [
+          "British Council Certified UK Agent & Counsellor – British Council",
+          "Trained NT Education Agent – Northern Territory Government",
+        ],
       },
-    ],
-  },
-
-  certifications: {
-    display: true,
-    title: "Certifications",
-    items: [
-      "Certified in Cybersecurity (CC) – Skillsoft (2025)",
-      "CompTIA Cybersecurity Analyst+ (CySA+) – Skillsoft (2025)",
-      "Microsoft Azure Fundamentals – Skillsoft (2025)",
-      "Data Science & Analytics – HP LIFE (2025)",
-      "Front-End Software Engineering – Forage (Skyscanner)",
-      "Tata Cybersecurity Analyst – Forage",
-      "LinkedIn Marketing Strategy Certification",
-      "Trained NT Education Agent – Northern Territory Government",
-      "British Council Certified UK Agent & Counsellor",
-      "ApplyBoard Counsellor Course – Canada",
-      "Google Gemini Certified Educator",
     ],
   },
 };

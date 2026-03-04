@@ -16,38 +16,50 @@ export default function PrivacyPolicy() {
       <Heading variant="display-strong-l">Privacy Policy</Heading>
 
       <Text variant="body-default-m" onBackground="neutral-weak">
-        Last updated: January 2026
+        Last updated: March 2024
       </Text>
+
+      <Column gap="m">
+        <Heading as="h2" variant="heading-strong-l">
+          Introduction
+        </Heading>
+        <Text variant="body-default-m">
+          Your privacy is important to us. This Privacy Policy explains how {person.name} collects,
+          uses, and protects your personal information when you visit our website.
+        </Text>
+      </Column>
 
       <Column gap="m">
         <Heading as="h2" variant="heading-strong-l">
           Information Collection
         </Heading>
         <Text variant="body-default-m">
-          This website does not collect personal information from visitors unless voluntarily
-          provided through contact forms or email. Any information shared through the contact form
-          is used solely for responding to inquiries.
+          We may collect personal information that you voluntarily provide to us when you contact us
+          through the website. This may include your name, email address, and any other information
+          you choose to provide. Additionally, we may automatically collect certain information
+          about your device and usage of the website through cookies and similar technologies.
         </Text>
       </Column>
 
       <Column gap="m">
         <Heading as="h2" variant="heading-strong-l">
-          Cookies and Analytics
+          Use of Information
         </Heading>
         <Text variant="body-default-m">
-          This website may use cookies and analytics tools to improve user experience and understand
-          how visitors interact with the site. These tools collect anonymous data such as page
-          views, browser type, and general location.
+          The information we collect is used to provide and improve our services, respond to your
+          inquiries, and analyze how the website is used. We do not sell or share your personal
+          information with third parties for their marketing purposes.
         </Text>
       </Column>
 
       <Column gap="m">
         <Heading as="h2" variant="heading-strong-l">
-          Third-Party Services
+          Cookies and Tracking
         </Heading>
         <Text variant="body-default-m">
-          This website may contain links to external sites. These third-party sites have their own
-          privacy policies, and we are not responsible for their content or practices.
+          We use cookies to enhance your experience on our website. You can choose to disable
+          cookies through your browser settings, but this may affect your ability to use certain
+          features of the site.
         </Text>
       </Column>
 
@@ -56,8 +68,20 @@ export default function PrivacyPolicy() {
           Data Security
         </Heading>
         <Text variant="body-default-m">
-          Reasonable measures are taken to protect any personal information shared through this
-          website. However, no method of transmission over the internet is completely secure.
+          We take reasonable measures to protect your personal information from unauthorized access,
+          use, or disclosure. However, no method of transmission over the internet or electronic
+          storage is 100% secure.
+        </Text>
+      </Column>
+
+      <Column gap="m">
+        <Heading as="h2" variant="heading-strong-l">
+          Third-Party Links
+        </Heading>
+        <Text variant="body-default-m">
+          Our website may contain links to third-party websites. We are not responsible for the
+          privacy practices or content of these sites. We encourage you to review the privacy
+          policies of any third-party sites you visit.
         </Text>
       </Column>
 
