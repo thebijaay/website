@@ -1,4 +1,3 @@
-```tsx
 import {
   Avatar,
   Button,
@@ -99,7 +98,6 @@ export default function About() {
           >
             <Avatar
               src={person.avatar}
-              alt={person.name}
               style={{ width: "120px", height: "120px" }}
             />
 
@@ -261,4 +259,3 @@ export default function About() {
     </Column>
   );
 }
-```
