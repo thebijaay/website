@@ -91,7 +91,6 @@ export default function Home() {
                     marginRight="8"
                     style={{ marginLeft: "-0.75rem" }}
                     src={person.avatar}
-                    alt={person.name}
                     size="m"
                   />
                 )}
