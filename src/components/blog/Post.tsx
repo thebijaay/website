@@ -51,6 +51,9 @@ export default function Post({
           <Row gap="24" vertical="center">
             <Row vertical="center" gap="16">
               {showCircularAvatar && person.avatar && <Avatar src={person.avatar} size="s" />}
+              {showCircularAvatar && person.avatar && (
+                <Avatar src={person.avatar} size="s" />
+              )}
               <Text variant="label-default-s">{person.name}</Text>
             </Row>
 
