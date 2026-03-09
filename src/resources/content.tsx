@@ -71,7 +71,7 @@ const about: About = {
     experiences: [
       {
         company: "Oli & Associates Pvt. Ltd",
-        role: "Admission, Account & Documentation Officer",
+        role: "Admission, Visa & Account Officer",
         timeframe: "July 2022 – Present",
         achievements: [
           <>Managed end-to-end student admission processes</>,
@@ -125,9 +125,31 @@ const about: About = {
   technical: {
     display: true,
     title: "Professional Certifications",
+    certificates: [
+      {
+        title: "CertNexus Certified Data Science Practitioner",
+        image: "/images/Certificates/CertNexus Certified Data_page-0002.jpg",
+      },
+      {
+        title: "AWS Certified Developer – Associate",
+        image: "/images/Certificates/AWS Certified Developer Associate_page-0002.jpg",
+      },
+      {
+        title: "Google Cloud Generative AI Leader",
+        image: "/images/Certificates/Google Cloud Generative AI Leader_page-0002.jpg",
+      },
+      {
+        title: "University of London - Full-Stack Web Development",
+        image: "/images/Certificates/University of London_page-0002.jpg",
+      },
+      {
+        title: "AWS Generative AI & AI Agents",
+        image: "/images/Certificates/AWS Generative AI_page-0002.jpg",
+      },
+    ],
     skills: [
       {
-        title: "Professional Certifications",
+        title: "Data Science",
         items: ["CertNexus Certified Data Science Practitioner"],
       },
       {
@@ -229,10 +251,6 @@ const gallery: Gallery = {
       alt: "Professional moment",
       orientation: "horizontal",
     },
-    { src: "/images/gallery/vertical-1.jpeg", alt: "Professional moment", orientation: "vertical" },
-    { src: "/images/gallery/vertical-2.jpeg", alt: "Professional moment", orientation: "vertical" },
-    { src: "/images/gallery/vertical-3.jpeg", alt: "Professional moment", orientation: "vertical" },
-    { src: "/images/gallery/vertical-4.jpeg", alt: "Professional moment", orientation: "vertical" },
   ],
 };
 

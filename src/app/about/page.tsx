@@ -254,6 +254,132 @@ export default function About() {
               </Column>
             </>
           )}
+
+          {about.studies.display && (
+            <>
+              <Heading
+                as="h2"
+                id={about.studies.title}
+                variant="display-strong-s"
+                marginBottom="m"
+              >
+                {about.studies.title}
+              </Heading>
+
+              <Column fillWidth gap="l" marginBottom="40">
+                {about.studies.institutions.map((institution, index) => (
+                  <Column
+                    key={`${institution.name}-${index}`}
+                    fillWidth
+                  >
+                    <Row
+                      fillWidth
+                      horizontal="between"
+                      vertical="end"
+                      marginBottom="4"
+                    >
+                      <Text id={institution.name} variant="heading-strong-l">
+                        {institution.name}
+                      </Text>
+
+                      <Text
+                        variant="heading-default-xs"
+                        onBackground="neutral-weak"
+                      >
+                        {institution.timeframe}
+                      </Text>
+                    </Row>
+
+                    <Text
+                      variant="body-default-s"
+                      onBackground="brand-weak"
+                      marginBottom="m"
+                    >
+                      {institution.description}
+                    </Text>
+
+                    <Column as="ul" gap="16">
+                      {institution.details.map(
+                        (detail: React.ReactNode, index: number) => (
+                          <Text
+                            as="li"
+                            variant="body-default-m"
+                            key={`${institution.name}-${index}`}
+                          >
+                            {detail}
+                          </Text>
+                        )
+                      )}
+                    </Column>
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
+
+          {about.technical.display && (
+            <>
+              <Heading
+                as="h2"
+                id={about.technical.title}
+                variant="display-strong-s"
+                marginBottom="m"
+              >
+                {about.technical.title}
+              </Heading>
+
+              <Column fillWidth gap="l">
+                {about.technical.skills.map((skill, index) => (
+                  <Column
+                    key={`${skill.title}-${index}`}
+                    fillWidth
+                  >
+                    <Text variant="heading-strong-l" marginBottom="m">
+                      {skill.title}
+                    </Text>
+
+                    <Row wrap gap="12" marginBottom="m">
+                      {skill.items.map((item, index) => (
+                        <Tag key={index} size="m">
+                          {item}
+                        </Tag>
+                      ))}
+                    </Row>
+                  </Column>
+                ))}
+              </Column>
+
+              {about.technical.certificates && about.technical.certificates.length > 0 && (
+                <Column fillWidth gap="m" marginTop="xl">
+                  <Text variant="heading-strong-l" marginBottom="m">
+                    Certificates
+                  </Text>
+                  <Row wrap gap="12">
+                    {about.technical.certificates.map((certificate, index) => (
+                      <Column
+                        key={index}
+                        flex={1}
+                        minWidth="20"
+                        maxWidth="45"
+                        gap="8"
+                      >
+                        <Media
+                          src={certificate.image}
+                          alt={certificate.title}
+                          aspectRatio="4 / 3"
+                          radius="m"
+                          enlarge
+                        />
+                        <Text variant="body-default-s" align="center">
+                          {certificate.title}
+                        </Text>
+                      </Column>
+                    ))}
+                  </Row>
+                </Column>
+              )}
+            </>
+          )}
         </Column>
       </Row>
     </Column>
