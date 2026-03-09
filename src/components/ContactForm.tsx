@@ -3,8 +3,18 @@
 import { Column, Heading, Text, Input, Button, Row, Textarea } from "@once-ui-system/core";
 import { useState } from "react";
 
+interface FormError {
+  message: string;
+}
+
+interface FormState {
+  submitting: boolean;
+  succeeded: boolean;
+  errors: FormError[];
+}
+
 export const ContactForm = () => {
-  const [state, setState] = useState({
+  const [state, setState] = useState<FormState>({
     submitting: false,
     succeeded: false,
     errors: []
@@ -54,14 +64,14 @@ export const ContactForm = () => {
           <Column gap="m">
             <Row gap="m" s={{ direction: "column" }}>
               <Input
-                fillWidth
+                id="name"
                 label="Full Name"
                 name="name"
                 placeholder="John Doe"
                 required
               />
               <Input
-                fillWidth
+                id="email"
                 label="Email Address"
                 name="email"
                 type="email"
@@ -70,6 +80,7 @@ export const ContactForm = () => {
               />
             </Row>
             <Textarea
+              id="message"
               label="Message"
               name="message"
               placeholder="How can I help you?"

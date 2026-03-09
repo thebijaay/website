@@ -298,19 +298,21 @@ export default function About() {
                       {institution.description}
                     </Text>
 
-                    <Column as="ul" gap="16">
-                      {institution.details.map(
-                        (detail: React.ReactNode, index: number) => (
-                          <Text
-                            as="li"
-                            variant="body-default-m"
-                            key={`${institution.name}-${index}`}
-                          >
-                            {detail}
-                          </Text>
-                        )
-                      )}
-                    </Column>
+                    {institution.details && (
+                      <Column as="ul" gap="16">
+                        {institution.details.map(
+                          (detail: React.ReactNode, index: number) => (
+                            <Text
+                              as="li"
+                              variant="body-default-m"
+                              key={`${institution.name}-${index}`}
+                            >
+                              {detail}
+                            </Text>
+                          )
+                        )}
+                      </Column>
+                    )}
                   </Column>
                 ))}
               </Column>
@@ -338,13 +340,15 @@ export default function About() {
                       {skill.title}
                     </Text>
 
-                    <Row wrap gap="12" marginBottom="m">
-                      {skill.items.map((item, index) => (
-                        <Tag key={index} size="m">
-                          {item}
-                        </Tag>
-                      ))}
-                    </Row>
+                    {skill.items && (
+                      <Row wrap gap="12" marginBottom="m">
+                        {skill.items.map((item, index) => (
+                          <Tag key={index} size="m">
+                            {item}
+                          </Tag>
+                        ))}
+                      </Row>
+                    )}
                   </Column>
                 ))}
               </Column>
@@ -359,8 +363,8 @@ export default function About() {
                       <Column
                         key={index}
                         flex={1}
-                        minWidth="20"
-                        maxWidth="45"
+                        minWidth={20}
+                        maxWidth={45}
                         gap="8"
                       >
                         <Media

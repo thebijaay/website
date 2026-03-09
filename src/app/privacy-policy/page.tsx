@@ -1,4 +1,4 @@
-import { Column, Heading, Text, Link, Meta } from "@once-ui-system/core";
+import { Column, Heading, Text, SmartLink, Meta } from "@once-ui-system/core";
 import { baseURL, person } from "@/resources";
 
 export async function generateMetadata() {
@@ -54,7 +54,7 @@ export default function PrivacyPolicy() {
       <Column gap="m">
         <Heading as="h2" variant="heading-strong-l">Contact</Heading>
         <Text variant="body-default-m">
-          Questions? Contact us at: <Link href={`mailto:${person.email}`} variant="link-primary">{person.email}</Link>.
+          Questions? Contact us at: <SmartLink href={`mailto:${person.email}`}>{person.email}</SmartLink>.
         </Text>
       </Column>
     </Column>

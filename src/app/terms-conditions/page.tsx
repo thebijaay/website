@@ -1,4 +1,4 @@
-import { Column, Heading, Text, Link, Meta } from "@once-ui-system/core";
+import { Column, Heading, Text, SmartLink, Meta } from "@once-ui-system/core";
 import { baseURL, person } from "@/resources";
 
 export async function generateMetadata() {
@@ -46,7 +46,7 @@ export default function TermsConditions() {
       <Column gap="m">
         <Heading as="h2" variant="heading-strong-l">Contact</Heading>
         <Text variant="body-default-m">
-          For any questions, contact us at: <Link href={`mailto:${person.email}`} variant="link-primary">{person.email}</Link>.
+          For any questions, contact us at: <SmartLink href={`mailto:${person.email}`}>{person.email}</SmartLink>.
         </Text>
       </Column>
     </Column>
