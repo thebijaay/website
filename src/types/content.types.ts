@@ -189,6 +189,11 @@ export interface About extends BasePageConfig {
     display: boolean;
     /** Title for the technical skills section */
     title: string;
+    /** List of certificate images */
+    certificates?: Array<{
+      title: string;
+      image: string;
+    }>;
     /** List of technical skills */
     skills: Array<{
       /** Skill title */

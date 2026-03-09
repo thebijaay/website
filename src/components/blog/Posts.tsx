@@ -45,9 +45,9 @@ export function Posts({
             let postCustomImage = customImage;
             if (!postCustomImage && thumbnail) {
               // Assign specific images for the first 3 posts when thumbnail is true
-              if (index === 0) postCustomImage = "/images/img-1.jpg";
-              else if (index === 1) postCustomImage = "/images/img-2.jpg";
-              else if (index === 2) postCustomImage = "/images/img-3.jpg";
+              if (index === 0) postCustomImage = "/images/img-1.jpeg";
+              else if (index === 1) postCustomImage = "/images/img-2.jpeg";
+              else if (index === 2) postCustomImage = "/images/img-3.jpeg";
             }
 
             return (
