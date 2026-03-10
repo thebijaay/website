@@ -2,46 +2,32 @@ import { Column, Heading, Text, MasonryGrid, Media, Meta, Schema, Flex } from "@
 import { baseURL, person } from "@/resources";
 
 const certificates = [
-  {
-    src: "/images/certificate/CertNexus Certified Data_page-0002.jpg",
-    alt: "CertNexus Certified Data Science Practitioner",
-  },
-  {
-    src: "/images/certificate/AWS Certified Developer Associate_page-0002.jpg",
-    alt: "AWS Certified Developer – Associate",
-  },
-  {
-    src: "/images/certificate/Google Cloud Generative AI Leader_page-0002.jpg",
-    alt: "Google Cloud Generative AI Leader",
-  },
-  {
-    src: "/images/certificate/University of London_page-0002.jpg",
-    alt: "University of London - Full-Stack Web Development",
-  },
-  {
-    src: "/images/certificate/AWS Generative AI_page-0002.jpg",
-    alt: "AWS Generative AI & AI Agents",
-  },
-  {
-    src: "/images/certificate/CertNexus Certified Data_page-0003.jpg",
-    alt: "CertNexus Certified Data Science Practitioner - Page 2",
-  },
-  {
-    src: "/images/certificate/AWS Certified Developer Associate_page-0003.jpg",
-    alt: "AWS Certified Developer – Associate - Page 2",
-  },
-  {
-    src: "/images/certificate/Google Cloud Generative AI Leader_page-0003.jpg",
-    alt: "Google Cloud Generative AI Leader - Page 2",
-  },
-  {
-    src: "/images/certificate/University of London_page-0003.jpg",
-    alt: "University of London - Full-Stack Web Development - Page 2",
-  },
-  {
-    src: "/images/certificate/AWS Generative AI_page-0003.jpg",
-    alt: "AWS Generative AI & AI Agents - Page 2",
-  },
+  { src: "/images/certificate/CertNexus Certified Data_page-0002.jpg", alt: "CertNexus Certified Data Science Practitioner - P1" },
+  { src: "/images/certificate/CertNexus Certified Data_page-0003.jpg", alt: "CertNexus Certified Data Science Practitioner - P2" },
+  { src: "/images/certificate/CertNexus Certified Data_page-0004.jpg", alt: "CertNexus Certified Data Science Practitioner - P3" },
+  { src: "/images/certificate/CertNexus Certified Data_page-0005.jpg", alt: "CertNexus Certified Data Science Practitioner - P4" },
+  { src: "/images/certificate/CertNexus Certified Data_page-0006.jpg", alt: "CertNexus Certified Data Science Practitioner - P5" },
+  { src: "/images/certificate/CertNexus Certified Data_page-0007.jpg", alt: "CertNexus Certified Data Science Practitioner - P6" },
+  { src: "/images/certificate/AWS Certified Developer Associate_page-0002.jpg", alt: "AWS Certified Developer – Associate - P1" },
+  { src: "/images/certificate/AWS Certified Developer Associate_page-0003.jpg", alt: "AWS Certified Developer – Associate - P2" },
+  { src: "/images/certificate/AWS Certified Developer Associate_page-0004.jpg", alt: "AWS Certified Developer – Associate - P3" },
+  { src: "/images/certificate/AWS Certified Developer Associate_page-0005.jpg", alt: "AWS Certified Developer – Associate - P4" },
+  { src: "/images/certificate/Google Cloud Generative AI Leader_page-0002.jpg", alt: "Google Cloud Generative AI Leader - P1" },
+  { src: "/images/certificate/Google Cloud Generative AI Leader_page-0003.jpg", alt: "Google Cloud Generative AI Leader - P2" },
+  { src: "/images/certificate/Google Cloud Generative AI Leader_page-0004.jpg", alt: "Google Cloud Generative AI Leader - P3" },
+  { src: "/images/certificate/Google Cloud Generative AI Leader_page-0005.jpg", alt: "Google Cloud Generative AI Leader - P4" },
+  { src: "/images/certificate/Google Cloud Generative AI Leader_page-0006.jpg", alt: "Google Cloud Generative AI Leader - P5" },
+  { src: "/images/certificate/University of London_page-0002.jpg", alt: "University of London - Full-Stack Web Development - P1" },
+  { src: "/images/certificate/University of London_page-0003.jpg", alt: "University of London - Full-Stack Web Development - P2" },
+  { src: "/images/certificate/University of London_page-0004.jpg", alt: "University of London - Full-Stack Web Development - P3" },
+  { src: "/images/certificate/AWS Generative AI_page-0002.jpg", alt: "AWS Generative AI & AI Agents - P1" },
+  { src: "/images/certificate/AWS Generative AI_page-0003.jpg", alt: "AWS Generative AI & AI Agents - P2" },
+  { src: "/images/certificate/AWS Generative AI_page-0004.jpg", alt: "AWS Generative AI & AI Agents - P3" },
+  { src: "/images/certificate/horizontal-1.jpg", alt: "Professional Certificate 1" },
+  { src: "/images/certificate/horizontal-2.jpg", alt: "Professional Certificate 2" },
+  { src: "/images/certificate/horizontal-3.jpg", alt: "Professional Certificate 3" },
+  { src: "/images/certificate/horizontal-4.jpg", alt: "Professional Certificate 4" },
+  { src: "/images/certificate/horizontal-5.jpg", alt: "Professional Certificate 5" },
 ];
 
 export async function generateMetadata() {
@@ -72,7 +58,7 @@ export default function Certificates() {
       <Column fillWidth gap="m" marginBottom="xl">
         <Heading variant="display-strong-l">Certificates</Heading>
         <Text variant="body-default-l" onBackground="neutral-weak">
-          A collection of my professional certifications and academic achievements.
+          A collection of my professional certifications and academic achievements. Click on any certificate to view it in full detail.
         </Text>
       </Column>
       <MasonryGrid columns={2} s={{ columns: 1 }} gap="m">
