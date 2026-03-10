@@ -22,6 +22,7 @@ const routes: RoutesConfig = {
   "/work": true,
   "/blog": true,
   "/gallery": true,
+  "/certificates": true,
   "/privacy-policy": true,
   "/terms-conditions": true,
 };

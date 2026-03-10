@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
       <Heading variant="display-strong-l">Privacy Policy</Heading>
 
       <Text variant="body-default-m" onBackground="neutral-weak">
-        Last updated: May 2024
+        Last updated: March 2024
       </Text>
 
       <Column gap="m">

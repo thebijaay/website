@@ -25,9 +25,9 @@ const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = "en-GB" })
         hour: "2-digit",
         minute: "2-digit",
         second: "2-digit",
-        hour12: false,
+        hour12: true,
       };
-      const timeString = new Intl.DateTimeFormat(locale, options).format(now);
+      const timeString = new Intl.DateTimeFormat("en-US", options).format(now);
       setCurrentTime(timeString);
     };
 
@@ -105,6 +105,25 @@ export const Header = () => {
                       prefixIcon="person"
                       href="/about"
                       selected={pathname === "/about"}
+                    />
+                  </Row>
+                </>
+              )}
+              {routes["/certificates"] && (
+                <>
+                  <Row s={{ hide: true }}>
+                    <ToggleButton
+                      prefixIcon="certificate"
+                      href="/certificates"
+                      label="Certificates"
+                      selected={pathname.startsWith("/certificates")}
+                    />
+                  </Row>
+                  <Row hide s={{ hide: false }}>
+                    <ToggleButton
+                      prefixIcon="certificate"
+                      href="/certificates"
+                      selected={pathname.startsWith("/certificates")}
                     />
                   </Row>
                 </>

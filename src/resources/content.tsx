@@ -227,6 +227,31 @@ const gallery: Gallery = {
   description: "Professional moments and achievements",
   images: [
     {
+      src: "/images/certificate/CertNexus Certified Data_page-0002.jpg",
+      alt: "CertNexus Certified Data Science Practitioner",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/certificate/AWS Certified Developer Associate_page-0002.jpg",
+      alt: "AWS Certified Developer – Associate",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/certificate/Google Cloud Generative AI Leader_page-0002.jpg",
+      alt: "Google Cloud Generative AI Leader",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/certificate/University of London_page-0002.jpg",
+      alt: "University of London - Full-Stack Web Development",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/certificate/AWS Generative AI_page-0002.jpg",
+      alt: "AWS Generative AI & AI Agents",
+      orientation: "horizontal",
+    },
+    {
       src: "/images/gallery/horizontal-1.jpeg",
       alt: "Professional moment",
       orientation: "horizontal",
