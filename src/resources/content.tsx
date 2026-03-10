@@ -128,23 +128,23 @@ const about: About = {
     certificates: [
       {
         title: "CertNexus Certified Data Science Practitioner",
-        image: "/images/Certificates/CertNexus Certified Data_page-0002.jpg",
+        image: "/images/certificate/CertNexus Certified Data_page-0002.jpg",
       },
       {
         title: "AWS Certified Developer – Associate",
-        image: "/images/Certificates/AWS Certified Developer Associate_page-0002.jpg",
+        image: "/images/certificate/AWS Certified Developer Associate_page-0002.jpg",
       },
       {
         title: "Google Cloud Generative AI Leader",
-        image: "/images/Certificates/Google Cloud Generative AI Leader_page-0002.jpg",
+        image: "/images/certificate/Google Cloud Generative AI Leader_page-0002.jpg",
       },
       {
         title: "University of London - Full-Stack Web Development",
-        image: "/images/Certificates/University of London_page-0002.jpg",
+        image: "/images/certificate/University of London_page-0002.jpg",
       },
       {
         title: "AWS Generative AI & AI Agents",
-        image: "/images/Certificates/AWS Generative AI_page-0002.jpg",
+        image: "/images/certificate/AWS Generative AI_page-0002.jpg",
       },
     ],
     skills: [
