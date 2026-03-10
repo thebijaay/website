@@ -98,7 +98,8 @@ export default function About() {
           >
             <Avatar
               src={person.avatar}
-              style={{ width: "120px", height: "120px" }}
+              style={{ width: "160px", height: "160px" }}
+              radius="full"
             />
 
             <Row gap="8" vertical="center">
