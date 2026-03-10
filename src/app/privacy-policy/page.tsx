@@ -1,5 +1,6 @@
 import { Column, Heading, Text, SmartLink, Meta, Row, Line } from "@once-ui-system/core";
 import { baseURL, person } from "@/resources";
+import styles from "@/components/about/about.module.scss";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -25,7 +26,7 @@ export default function PrivacyPolicy() {
       <Column gap="32">
         <Column gap="m">
           <Heading as="h2" variant="heading-strong-l">1. Introduction</Heading>
-          <Text variant="body-default-m" className="justified">
+          <Text variant="body-default-m" className={styles.justified}>
             Your privacy is important to us. This policy outlines how {person.name} collects, uses, and
             protects your information when you visit our website. By using our site, you consent to our
             privacy practices.
@@ -34,7 +35,7 @@ export default function PrivacyPolicy() {
 
         <Column gap="m">
           <Heading as="h2" variant="heading-strong-l">2. Data Collection</Heading>
-          <Text variant="body-default-m" className="justified">
+          <Text variant="body-default-m" className={styles.justified}>
             We collect information from you in the following ways:
           </Text>
           <Column as="ul" gap="8" paddingLeft="24">
@@ -46,7 +47,7 @@ export default function PrivacyPolicy() {
 
         <Column gap="m">
           <Heading as="h2" variant="heading-strong-l">3. Use of Information</Heading>
-          <Text variant="body-default-m" className="justified">
+          <Text variant="body-default-m" className={styles.justified}>
             Any information we collect may be used in one of the following ways:
           </Text>
           <Column as="ul" gap="8" paddingLeft="24">
@@ -61,7 +62,7 @@ export default function PrivacyPolicy() {
 
         <Column gap="m">
           <Heading as="h2" variant="heading-strong-l">4. Data Security</Heading>
-          <Text variant="body-default-m" className="justified">
+          <Text variant="body-default-m" className={styles.justified}>
             We implement a variety of security measures to maintain the safety of your personal information.
             We use industry-standard encryption and security protocols to ensure your data is protected.
           </Text>
@@ -69,7 +70,7 @@ export default function PrivacyPolicy() {
 
         <Column gap="m">
           <Heading as="h2" variant="heading-strong-l">5. Your Rights</Heading>
-          <Text variant="body-default-m" className="justified">
+          <Text variant="body-default-m" className={styles.justified}>
             You have the right to:
           </Text>
           <Column as="ul" gap="8" paddingLeft="24">

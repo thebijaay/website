@@ -61,16 +61,20 @@ export default function Certificates() {
           A collection of my professional certifications and academic achievements. Click on any certificate to view it in full detail.
         </Text>
       </Column>
-      <MasonryGrid columns={2} s={{ columns: 1 }} gap="m">
+      <MasonryGrid columns={3} m={{ columns: 2 }} s={{ columns: 1 }} gap="m">
         {certificates.map((certificate, index) => (
-          <Media
-            key={index}
-            src={certificate.src}
-            alt={certificate.alt}
-            enlarge
-            radius="m"
-            aspectRatio="4 / 3"
-          />
+          <Flex key={index} direction="column" gap="8">
+            <Media
+              src={certificate.src}
+              alt={certificate.alt}
+              enlarge
+              radius="m"
+              aspectRatio="4 / 3"
+            />
+            <Text variant="body-default-s" onBackground="neutral-weak" align="center">
+              {certificate.alt}
+            </Text>
+          </Flex>
         ))}
       </MasonryGrid>
     </Flex>
