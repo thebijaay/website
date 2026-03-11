@@ -258,3 +258,19 @@ export interface Gallery extends BasePageConfig {
     orientation: string;
   }>;
 }
+
+/**
+ * Book page configuration.
+ */
+export interface Book extends BasePageConfig {
+  /** Name of the book */
+  bookName: string;
+  /** Price in USD */
+  priceUSD: number;
+  /** Price in NPR */
+  priceNPR: number;
+  /** Contact email for payment */
+  paymentEmail: string;
+  /** Path to the preview PDF */
+  previewPath: string;
+}
