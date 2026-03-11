@@ -1,0 +1,15 @@
+
+> jay-prasad-majhi-full-stack-developer@1.0.0 dev
+> next dev
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+
+✓ Starting...
+✓ Ready in 698ms
+○ Compiling /book ...
+ GET /book 200 in 22.8s (compile: 18.4s, render: 4.4s)
+○ Compiling / ...
+ GET / 200 in 4.4s (compile: 4.1s, render: 295ms)
+ GET /book 200 in 240ms (compile: 12ms, render: 228ms)
