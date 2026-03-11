@@ -55,12 +55,12 @@ Built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). Req
 
 ## Documentation
 
-Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfolio/quick-start)
+Docs available at: [https://jayprasad.com.np]( https://jayprasad.com.np/about)
 
 ## Features
 
-### Once UI
-- All tokens, components & features of [Once UI](https://once-ui.com)
+### Thebijay
+- All tokens, components & features of [thebijay](https://jayprasad.com.np)
 
 ### SEO
 - Automatic open-graph and X image generation with next/og
@@ -85,8 +85,8 @@ Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfo
 
 **Jay Prasad Majhi**
 - 📧 Email: [admin@jayprasad.com.np](mailto:admin@jayprasad.com.np)
-- 💼 LinkedIn: [Jay Prasad Majhi](https://www.linkedin.com/in/jay-prasad-majhi-277662237/)
-- 🐙 GitHub: [Jaymaji](https://github.com/Jaymaji)
+- 💼 LinkedIn: [Jay Prasad Majhi](https://www.linkedin.com/in/thebijay/)
+- 🐙 GitHub: [thebijay](https://github.com/thebijaay)
 - 🌐 Website: [jayprasad.com.np](https://www.jayprasad.com.np)
 
 ## Get involved
@@ -107,3 +107,4 @@ See `LICENSE.txt` for more information.
 
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fdemo.magic-portfolio.com&demo-image=%2F%2Fraw.githubusercontent.com%2Fonce-ui-system%2Fmagic-portfolio%2Fmain%2Fpublic%2Fimages%2Fog%2Fhome.jpg)
+
