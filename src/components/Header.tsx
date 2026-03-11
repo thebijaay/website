@@ -151,7 +151,7 @@ export const Header = () => {
                 <>
                   <Row s={{ hide: true }}>
                     <ToggleButton
-                      prefixIcon="edit"
+                      prefixIcon="book"
                       href="/blog"
                       label={blog.label}
                       selected={pathname.startsWith("/blog")}
@@ -159,28 +159,9 @@ export const Header = () => {
                   </Row>
                   <Row hide s={{ hide: false }}>
                     <ToggleButton
-                      prefixIcon="edit"
+                      prefixIcon="book"
                       href="/blog"
                       selected={pathname.startsWith("/blog")}
-                    />
-                  </Row>
-                </>
-              )}
-              {routes["/book"] && (
-                <>
-                  <Row s={{ hide: true }}>
-                    <ToggleButton
-                      prefixIcon="book"
-                      href="/book"
-                      label="Book"
-                      selected={pathname.startsWith("/book")}
-                    />
-                  </Row>
-                  <Row hide s={{ hide: false }}>
-                    <ToggleButton
-                      prefixIcon="book"
-                      href="/book"
-                      selected={pathname.startsWith("/book")}
                     />
                   </Row>
                 </>

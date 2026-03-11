@@ -1,4 +1,4 @@
-import { About, Blog, Book, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
 
 const person: Person = {
   firstName: "Jay Prasad",
@@ -279,16 +279,4 @@ const gallery: Gallery = {
   ],
 };
 
-const book: Book = {
-  path: "/book",
-  label: "Book",
-  title: "The Power of Ignoring Everyone – Book Preview",
-  description: "Read the first few pages of 'The Power of Ignoring Everyone' and learn how to get the full copy.",
-  bookName: "The Power of Ignoring Everyone",
-  priceUSD: 5,
-  priceNPR: 500,
-  paymentEmail: "admin@jayprasad.com",
-  previewPath: "/Book/preview.pdf",
-};
-
-export { person, social, newsletter, home, about, blog, work, gallery, book };
+export { person, social, newsletter, home, about, blog, work, gallery };

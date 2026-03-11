@@ -22,7 +22,6 @@ const routes: RoutesConfig = {
   "/work": true,
   "/blog": true,
   "/gallery": true,
-  "/book": true,
   "/certificates": true,
   "/privacy-policy": true,
   "/terms-conditions": true,
